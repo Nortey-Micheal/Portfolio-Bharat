@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "outfit";
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "young-serif";
+    src: url(fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Inter","outfit";
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar>img {
+    height: 70px;
+    width: 200px;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+nav ul:first-of-type a{
+    color: #f9f7f0;
+}
+
+.container {
+    width: min(90vw,1100px);
+    margin: 0 auto;
+}
+
+.nav {
+    flex-grow: 1;
+    position: sticky;
+    top: -1px;
+    
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: #261b51;
+}
+
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section:first-of-type>.container {
+    
+}
