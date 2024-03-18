@@ -54,7 +54,7 @@ section {
     scroll-margin: 80px;
 }
 
-h1::first-letter,h2::first-letter{
+i{
     color: #18b7be;
 }
 
@@ -124,7 +124,25 @@ section:first-of-type {
     color: white;
 }
 
+/* section:last-of-type a:nth-of-type(1):hover::after{
+    content: "Facebook";
+}
 
+section:last-of-type a:nth-of-type(2):hover::after{
+    content: "WhatsApp";
+}
+
+section:last-of-type a:nth-of-type(3):hover::after{
+    content: "Github";
+}
+
+section:last-of-type a:nth-of-type(4):hover::after{
+    content: "LinkedIn";
+}
+
+section:last-of-type a:nth-of-type(5):hover::after{
+    content: "Gmail";
+} */
 
 section:first-of-type p{
     padding: 15px;
@@ -203,6 +221,9 @@ section:nth-of-type(3)>div>div{
     flex-flow: row wrap;
 }
 
+.dropbtn>span{
+    text-indent: -9999px;
+}
 
 section:nth-of-type(3)>div>div>div{
     width: min(330px,calc(47vw + 30px));
@@ -233,4 +254,34 @@ footer>div{
 footer>div>div>ul{
     display: flex;
     gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+   .nav a {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    }
+
+    footer>div>div+div>ul>li>a{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav a span,footer>div span{
+        text-indent: -9999px;
+   }
+
+   section:first-of-type>.container {
+        flex-direction: column-reverse;
+   } 
+
+   section:first-of-type>.container img{
+       align-self: center;
+       margin-bottom: 25px;
+   }
+
 }
