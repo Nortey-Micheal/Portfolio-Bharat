@@ -112,9 +112,10 @@ img[src *="jpg"] {
 }
 
 img[src *= ".png"] { 
-    width: min(300px,50vw);
-    border-radius: max(30px,1.3rem);
-    box-shadow: #072a40 5px 5px 10px;
+    /* width: min(300px,50vw); */
+    /* border-radius: max(30px,1.3rem); */
+    /* box-shadow: #072a40 5px 5px 10px; */
+    width: 100%;
 }
 
 section:first-of-type {
@@ -210,12 +211,14 @@ section:nth-of-type(3)>div>div{
 section:nth-of-type(3)>div>div>div{
     width: min(330px,calc(47vw + 30px));
     margin: 30px 30px;
-    height: 500px;
     overflow: auto;
-    box-shadow: #17bca4 5px 5px 5px;
-    border: 1px solid #17bca4;
-    padding: 5px;
+    box-shadow: #083c5c 7px 7px 5px;
     border-radius: 20px;
+    color: #f4f4f4;
+}
+
+section:nth-of-type(3)>div>div>div span{
+    margin-left: 20px;
 }
 
 section:nth-of-type(3) h2{
