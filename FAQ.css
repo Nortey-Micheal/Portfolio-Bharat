@@ -6,7 +6,7 @@ section:nth-of-type(4) {
     height: max(calc(600px + 3rem), 60vh);
     width: min(90vw,1100px);
     color: hsl(292, 42%, 14%);
-    margin: 30px 0;
+    margin: 0 auto;
 } 
 
 /* main {
