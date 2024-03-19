@@ -58,7 +58,7 @@ i{
     color: #18b7be;
 }
 
-.navbar>img {
+.navbar>a>img {
     height: 70px;
     width: min(40vw,200px);
 }
@@ -124,25 +124,6 @@ section:first-of-type {
     color: white;
 }
 
-/* section:last-of-type a:nth-of-type(1):hover::after{
-    content: "Facebook";
-}
-
-section:last-of-type a:nth-of-type(2):hover::after{
-    content: "WhatsApp";
-}
-
-section:last-of-type a:nth-of-type(3):hover::after{
-    content: "Github";
-}
-
-section:last-of-type a:nth-of-type(4):hover::after{
-    content: "LinkedIn";
-}
-
-section:last-of-type a:nth-of-type(5):hover::after{
-    content: "Gmail";
-} */
 
 section:first-of-type p{
     padding: 15px;
@@ -205,11 +186,16 @@ h3{
     font-style: italic;
 }
 
+section:nth-of-type(2)>div>ul:first-of-type>div{
+    display: none;
+}
+
 section:nth-of-type(2)>div>ul:first-of-type>div>li{
     width: min(40vw,400px);
     background-color: #17bca4;
     border-radius: 8px;
     padding: 10px;
+    margin: 10px auto;
 }
 
 section:nth-of-type(3){
@@ -219,10 +205,6 @@ section:nth-of-type(3){
 section:nth-of-type(3)>div>div{
     display: flex;
     flex-flow: row wrap;
-}
-
-.dropbtn>span{
-    text-indent: -9999px;
 }
 
 section:nth-of-type(3)>div>div>div{

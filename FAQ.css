@@ -24,7 +24,7 @@ section:nth-of-type(4)>div {
     align-self: center;
     border-radius: 20px;
     padding: 20px;
-    height: 700px;
+    height: max(700px,65vh);
     margin: 0 auto;
     overflow-y: auto;   
 }
