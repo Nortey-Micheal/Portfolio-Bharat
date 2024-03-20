@@ -5,7 +5,7 @@ section:nth-of-type(4) {
     font-family: "WorkSans";
     height: max(calc(600px + 3rem), 60vh);
     width: min(90vw,1100px);
-    color: hsl(292, 42%, 14%);
+    color: #f5f5f5;
     margin: 0 auto;
 } 
 
@@ -19,7 +19,7 @@ section:nth-of-type(4)>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px hsl(0, 0%, 100%) solid;
+    border: 1px #424242 solid;
     width: min(700px,70vw);
     align-self: center;
     border-radius: 20px;
@@ -39,7 +39,7 @@ section:nth-of-type(4)>div>h2 {
 section:nth-of-type(4)>div>div {
     border-bottom: 3px solid hsl(275, 100%, 97);
     display: flex;
-    background-color: #0caf97;
+    background-color: #424242;
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 20px;
