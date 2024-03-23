@@ -187,6 +187,7 @@ section:first-of-type button {
     padding: 5px;
     border-radius: 15px;
     margin: 0 auto;
+    cursor: pointer;
     position: fixed;
     bottom: 50px;
     border: none;
@@ -275,10 +276,6 @@ section:last-of-type{
     line-height: 2.5rem;
 }
 
-section:last-of-type {
-
-}
-
 section:last-of-type h2{
     padding: 15px;
     
@@ -292,6 +289,14 @@ section:last-of-type li>a>i{
 }
 
 section:last-of-type li>a{
+    color: var(--text);
+}
+
+section:last-of-type li>a:hover{
+    color: var(--click);
+}
+
+section:last-of-type li>a>i:hover{
     color: var(--text);
 }
 

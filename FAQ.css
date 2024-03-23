@@ -35,8 +35,8 @@ section:nth-of-type(4)>div>h2 {
     margin: 15px;
 }
 
-section:nth-of-type(4)>div button{
-    cursor: help;
+section:nth-of-type(4)>div>div input[type = "button"]{
+    cursor: pointer;
 }
 
 section:nth-of-type(4)>div>div {
