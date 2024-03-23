@@ -1,37 +1,38 @@
+:root{
+    --mainBg: #FCF7FF;
+    --whtTxt: #FCF7FF;
+    --text: #261B51;
+    --boxShd: #261b51;
+    --click: #9B7FE9;
+    --txtEdt: linear-gradient(to bottom right, #00b5ff,#57fbdb);
+    --txtUndln: #FFFADE;
+    --cont: #FFFADE;
+}
+
 section:nth-of-type(4) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: "WorkSans";
-    height: max(calc(600px + 3rem), 60vh);
+    /* height: max(calc(600px + 3rem), 60vh); */
     width: min(90vw,1100px);
-    color: #f5f5f5;
+    color: var(--text);
     margin: 0 auto;
 } 
 
-/* main {
-    flex-grow: 1;
-    margin: 0 auto;
-    padding-top: 7rem;
-} */
 
 section:nth-of-type(4)>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px #424242 solid;
-    width: min(700px,70vw);
+    width: min(1100px,70vw);
     align-self: center;
     border-radius: 20px;
-    padding: 20px;
-    height: max(700px,65vh);
-    margin: 0 auto;
-    overflow-y: auto;   
+    margin: 0 auto;  
 }
 
 section:nth-of-type(4)>div>h2 {
-    font-size: 4rem;
-    color: #f4f4f4;
+    margin: 15px;
 }
 
 section:nth-of-type(4)>div button{
@@ -39,19 +40,18 @@ section:nth-of-type(4)>div button{
 }
 
 section:nth-of-type(4)>div>div {
-    border-bottom: 3px solid hsl(275, 100%, 97);
     display: flex;
-    background-color: #424242;
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 20px;
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    border: 1px var(--boxShd) solid;
 }
 
 section:nth-of-type(4)>div  p {
-    color: #f5f5f5;
+    color: var(--text);
     margin-top: 20px;
     margin-bottom: 10px;
     display: none;
@@ -71,9 +71,6 @@ input[type="button"] {
     text-indent: -9999px;    /* hides input value */
 }
 
-/* img:hover {
-    opacity: 80%;
-} */
 
 section:nth-of-type(4)>div {
     flex-grow: 1;
@@ -90,11 +87,7 @@ section:nth-of-type(4)>div div>div  {
     justify-content: space-between;
 }
 
-.footer {
-    text-align: center;
-    background-color: hsl(292, 42%, 14%);
-    color: #f4f4f4;
-}
+
 
 @media screen and (max-width: 768px) {
     section:nth-of-type(4)>div  p{

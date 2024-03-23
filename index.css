@@ -33,9 +33,7 @@ li>a {
     color: var(--click);
 }
 
-section:last-of-type li>a:hover{
-    color: #D5D5D5;
-}
+
 
 footer li>a:hover{
     color: var(--projectCol);
@@ -60,12 +58,13 @@ body {
 
 ul>li,p{
     font-family: "outfit","Inter";
-    font-size: clamp(16px,1.3rem,5vw);
+    font-size: clamp(1.2rem,16px,5%);
 }
 
 h1,h2 {
     font-family: "young-serif",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    font-size: clamp(2rem,20px,10%);
 }
 
 section {
@@ -73,12 +72,8 @@ section {
 }
 
 section:nth-of-type(n + 2){
-    margin: 50px 0;
+    margin: 80px 0;
 }
-/* 
-header>.container nav i{
-    color: var(--whtTxt);
- } */
 
 main section:nth-of-type(n + 2) i{
     color: var(--click);
@@ -209,7 +204,6 @@ section:nth-of-type(2)>div{
 
 section:nth-of-type(2) h2{
     margin-bottom: 15px;
-    
 }
 
 
@@ -249,17 +243,14 @@ section:nth-of-type(3)>div>div{
     flex-flow: row wrap;
 }
 
-section:nth-of-type(3) .container{
-    padding: 10px;
-    border-radius: 8px;
-}
 
 section:nth-of-type(3)>div>div>div{
     margin-left: 5%;
     width: 45%;
-    box-shadow: var(--boxShd) 3px 3px 7px;
-    border-radius: 20px;
- 
+    box-shadow: var(--click) 3px 3px 2px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--cont);
 }
 
 section:nth-of-type(3)>div>div>div>div{
@@ -270,18 +261,43 @@ section:nth-of-type(3)>div>div>div:first-of-type ,section:nth-of-type(3)>div>div
     margin-bottom: clamp(4rem,50px,15%);
 }
 
-section:nth-of-type(3)>div>div>div span{
-    margin: 5px;
+section:nth-of-type(3)>div>div>div:first-of-type ,section:nth-of-type(3)>div>div>div:nth-of-type(3){
+    margin-left: 0;
 }
 
 section:nth-of-type(3) h2{
     margin-bottom: 20px;
+
+}
+
+section:last-of-type{
+    color: var(--text);
+    line-height: 2.5rem;
+}
+
+section:last-of-type {
+
+}
+
+section:last-of-type h2{
+    padding: 15px;
+    
+}
+
+section:last-of-type h2>i{
+    color: var(--click);
+}
+section:last-of-type li>a>i{
+    color: var(--click);
+}
+
+section:last-of-type li>a{
+    color: var(--text);
 }
 
 footer{
-    background-color: var(--linksCol);
-    color: var(--textCol);
-    border: var(--decoEle) 1px solid;
+    background-color: var(--boxShd);
+    color: var(--whtTxt);
 }
 
 footer>div{
@@ -296,7 +312,13 @@ footer>div>div>ul{
     
 }
 footer li>a{
-    color: var(--textCol);
+    color: var(--whtTxt);
+}
+
+footer li>a:hover{
+    color: var(--click);
+    text-decoration: underline;
+    text-decoration-color: var(--txtUndln);
 }
 
 @media screen and (max-width: 768px) {
