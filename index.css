@@ -217,10 +217,6 @@ section:nth-of-type(2) h2{
     
 }
 
-/* section:nth-of-type(2)>div>ul:first-of-type>div{
-    display: flex;
-    
-} */
 
 h3{
     font-style: italic;
@@ -256,23 +252,21 @@ section:nth-of-type(3)>div>div{
 }
 
 section:nth-of-type(3) .container{
-    background-color: var(--projectCol);
     padding: 10px;
     border-radius: 8px;
-    border: var(--decoEle) 1px solid;
 }
 
 section:nth-of-type(3)>div>div>div{
-    width: min(330px,calc(47vw + 30px));
-    margin: 30px 30px;
-    overflow: auto;
-    box-shadow: #424242 7px 7px 5px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    width: 45%;
+    box-shadow: var(--boxShd) 3px 3px 7px;
     border-radius: 20px;
-    color: var(--projText);
+ 
 }
 
 section:nth-of-type(3)>div>div>div span{
-    margin-left: 20px;
+    margin: 5px;
 }
 
 section:nth-of-type(3) h2{
