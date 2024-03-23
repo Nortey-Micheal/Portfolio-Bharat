@@ -222,11 +222,19 @@ h3{
 }
 
 section:nth-of-type(2)>div>ul:first-of-type>div{
-    display: none;
+    display: flex;
     color: var(--textCol);
     flex-flow: row wrap;
     gap: 10px;
     justify-content: space-around;
+}
+
+section:nth-of-type(2) ul{
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(2) ul:last-of-type{
+    margin-bottom: 0;
 }
 
 section:nth-of-type(2)>div>ul:first-of-type>div>li{
@@ -236,7 +244,7 @@ section:nth-of-type(2)>div>ul:first-of-type>div>li{
     padding: 10px;
     margin: 10px auto;
     font-weight: 500;
-    box-shadow: var(--click) 3px 3px 7px;
+    box-shadow: var(--click) 3px 4px 1px;
     text-align: center;
 }
 
@@ -314,6 +322,14 @@ footer li>a{
 
     .nav a span,footer>div span{
         text-indent: -9999px;
+   }
+
+   section:nth-of-type(2)>div>ul:first-of-type>div{
+    width: 100%;
+   }
+
+   section:nth-of-type(2)>div>ul:first-of-type>div li{
+    width: 30%;
    }
 
    section:first-of-type>.container {
