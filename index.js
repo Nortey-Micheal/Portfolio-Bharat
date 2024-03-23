@@ -3,7 +3,7 @@ const div = document.querySelector("#div");
 
 dropbtn.addEventListener("click", () =>  {
     if (dropbtn.innerText == "Show"){
-        div.style.display = "block";
+        div.style.display = "flex";
         dropbtn.innerText = "Hide";
     } else{
         div.style.display = "none";
