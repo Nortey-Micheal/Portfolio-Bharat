@@ -90,6 +90,10 @@ section:nth-of-type(4)>div div>div  {
 
 
 @media screen and (max-width: 768px) {
+    section:nth-of-type(4)>div{
+        width: 100%;
+    }
+
     section:nth-of-type(4)>div  p{
         margin-top: 5px;
         margin-bottom: -10px;

@@ -182,8 +182,8 @@ section:first-of-type>.container>div {
 }
 
 section:first-of-type button {
-    background-color: var(--click);
-    color: var(--whtTxt);
+    background-image: var(--txtEdt);
+    color: var(--text);
     padding: 5px;
     border-radius: 15px;
     margin: 0 auto;
@@ -360,6 +360,20 @@ footer li>a:hover{
    section:first-of-type>.container {
         flex-direction: column-reverse;
    } 
+
+   section:nth-of-type(3)>div>div>div{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0;
+   }
+
+   section:nth-of-type(3)>div>div>div:last-of-type{
+        margin-bottom: 0;
+   }
+
+   section:nth-of-type(3)>div>div>div:first-of-type ,section:nth-of-type(3)>div>div>div:nth-of-type(2){
+    margin-bottom: 50px;
+   }
 
    section:first-of-type>.container img{
        align-self: center;
