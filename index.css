@@ -321,6 +321,7 @@ legend{
 }
 
 textarea{
+    padding: 10px;
     width: 100%;
     font-size: clamp(1rem,12px,5%)
 }
