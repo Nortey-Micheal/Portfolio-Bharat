@@ -51,7 +51,6 @@ body {
     background-color: var(--mainBg);
     color: var(--text);
     line-height: 1.5;
-    word-spacing: 0.3rem;
 }
 
 
