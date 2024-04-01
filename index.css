@@ -168,6 +168,7 @@ section:first-of-type p{
 
 section:first-of-type h1{
     font-size: clamp(3rem,18px,10vw);
+    text-align: start;
 }
 
 section:first-of-type>.container {
@@ -207,11 +208,6 @@ section:nth-of-type(2) h2{
     margin-bottom: 15px;
 }
 
-
-h3{
-    font-style: italic;
-}
-
 section:nth-of-type(2)>div>ul:first-of-type>div{
     display: flex;
     color: var(--textCol);
@@ -236,6 +232,9 @@ section:nth-of-type(2)>div>ul:first-of-type>div>li{
     margin: 10px auto;
     font-weight: 500;
     box-shadow: var(--click) 3px 4px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -298,6 +297,49 @@ section:last-of-type li>a:hover{
 
 section:last-of-type li>a>i:hover{
     color: var(--text);
+}
+
+section:last-of-type>div>div>form>fieldset{
+    padding: 15px;
+    border-radius: 7px;
+    width: min((100vw - 100px), max(50%,700px));
+    font-family: "outfit","Inter";
+    font-size: clamp(1.2rem,16px,5%)
+}
+
+section:last-of-type fieldset>fieldset{
+    border: none;
+    padding: 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+legend{
+    font-size: clamp(1.5rem,16px,8%);
+    font-weight: 600;
+}
+
+textarea{
+    width: 100%;
+    font-size: clamp(1rem,12px,5%)
+}
+
+section:last-of-type fieldset button{
+    margin-top: 20px;
+    padding: 5px;
+    color: var(--whtTxt);
+    background-color: var(--click);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+}
+
+section:last-of-type>div>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 footer{
@@ -378,6 +420,10 @@ footer li>a:hover{
    section:first-of-type>.container img{
        align-self: center;
        margin-bottom: 25px;
+   }
+
+   form{
+    margin-bottom: 30px;
    }
 
    footer>div li{
